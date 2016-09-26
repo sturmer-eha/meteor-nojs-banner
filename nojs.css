@@ -1,0 +1,20 @@
+html::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999999;
+  content: "Please enable JavaScript in your browser.\00000a\
+  The JavaScript support is needed in order to make this application function.";
+  padding: 3rem;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 150%;
+  white-space: pre-line;
+  background: rgba(255, 255, 255, .95);
+  box-shadow: 1px 2px 50px rgba(0, 0, 0, .89);
+}
+
+html.has-js::after {
+  display: none;
+}

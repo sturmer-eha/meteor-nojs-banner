@@ -1,6 +1,6 @@
 Package.describe({
   name: 'ecosturmer:nojs-banner',
-  version: '1.0.5',
+  version: '1.0.6',
   summary: 'Display a banner if JavaScript is disabled',
   git: 'https://github.com/sturmer-eha/meteor-nojs-banner.git',
   documentation: 'README.md'

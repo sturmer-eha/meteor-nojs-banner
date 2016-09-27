@@ -13,8 +13,23 @@ html::after {
   white-space: pre-line;
   background: rgba(255, 255, 255, .9);
   box-shadow: -10px 36px 91px rgba(0, 0, 0, .4);
+  visibility: hidden;
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  -webkit-animation: 1s fadeIn;
+  -webkit-animation-fill-mode: forwards;
 }
 
 html.has-js::after {
   display: none;
+}
+
+@keyframes fadeIn {
+  80% { visibility: hidden; }
+  100% { visibility: visible; }
+}
+
+@-webkit-keyframes fadeIn {
+  80% { visibility: hidden; }
+  100% { visibility: visible; }
 }
